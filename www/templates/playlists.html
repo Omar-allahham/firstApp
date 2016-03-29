@@ -1,0 +1,15 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+      <div class="card" ng-repeat="playlist in playlists">
+        <div class="item item-divider">
+          {{playlist.title}}
+        </div>
+        <div class="item item-text-wrap">
+          {{playlist.content | limitTo:50}}
+        </div>
+        <div class="item item-divider">
+          {{playlist.creator.name}}
+        </div>
+      </div>
+  </ion-content>
+</ion-view>
